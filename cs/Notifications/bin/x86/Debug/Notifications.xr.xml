@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Payload" />
+    <RootPropertyPathName Name="ScenarioGroup" />
+    <RootPropertyPathName Name="Children" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="ExpirationTime" />
+    <RootPropertyPathName Name="Tag" />
+    <RootPropertyPathName Name="Group" />
+    <RootPropertyPathName Name="Scenario" />
+    <RootPropertyPathName Name="UIElementType" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="AcceptsReturn" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MaxLength" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="FallbackValue" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Visibility" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Notifications.Controls.PopToastControl" />
+    <RootType FullName="Notifications.Helpers.BackButtonPage">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Notifications.MainPage" />
+    <RootType FullName="Notifications.Controls.StepsControl">
+      <RootProperty Name="IsNextEnabled" />
+      <RootProperty Name="Step" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Notifications.Controls.InstructionControl">
+      <RootProperty Name="Instruction" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
+      <RootProperty Name="Blocks" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Paragraph">
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="TextIndent" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.InlineUIContainer">
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.Action.TextAndImage.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.Action.QuickReply.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.Action.Text.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.InputText.DefaultInput.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.InputText.Title.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.InputText.PlaceholderContent.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.InputText.RetrievingArgs.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Actions.SystemCommands.SnoozeAndDismiss.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.BackgroundWithAppClosed.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.BackgroundWithAppOpen.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.ForegroundWithAppClosed.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.ForegroundWithAppOpen.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.Protocol.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.System.Dismiss.AutoContent.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.System.Dismiss.CustomContent.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.System.Dismiss.Dismissing.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.System.Snooze.AutoContent.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.System.Snooze.CustomContent.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ActivationTypes.System.Snooze.Snoozing.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.AdaptiveTemplates.Image.Src.FromAppData.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.AdaptiveTemplates.Image.Src.FromAppPackage.ScenarioElement" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Hyperlink">
+      <RootProperty Name="NavigateUri" />
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Notifications.ScenarioPages.Toasts.AdaptiveTemplates.Image.Src.FromInternet.ScenarioElement" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Audio.Default.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Audio.EmailSound.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Audio.Looping.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Audio.Silent.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ExpiringToast.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.GhostToast.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.HistoryChangedTrigger.BadgeControl.ScenarioElement" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+    </RootType>
+    <RootType FullName="Notifications.ScenarioPages.Toasts.HistoryChangedTrigger.RespondingToToasts.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Scenarios.Alarm.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Scenarios.Default.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Scenarios.IncomingCall.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.Scenarios.Reminder.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ToastNotificationManagerHistory.ClearAll.ScenarioElement" />
+    <RootType FullName="Notifications.Converters.XmlDocumentToStringConverter" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ToastNotificationManagerHistory.GetHistory.Visualizer.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ToastNotificationManagerHistory.RemoveGroup.ByGroup.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ToastNotificationManagerHistory.Remove.ByTagAndGroup.ScenarioElement" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.ToastNotificationManagerHistory.Remove.ByTag.ScenarioElement" />
+    <RootType FullName="Notifications.Converters.TypeToUIElementConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="TextWrapping" />
+    </RootType>
+    <RootType FullName="Notifications.ScenarioPage" />
+    <RootType FullName="Notifications.ScenarioPages.Toasts.UpdateToast.ScenarioElement" />
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Notifications.Controls.StepsHelperControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter">
+      <RootProperty Name="Margin" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

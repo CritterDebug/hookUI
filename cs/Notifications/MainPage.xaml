@@ -1,0 +1,69 @@
+﻿<helpers:BackButtonPage
+    x:Class="Notifications.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Notifications"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:helpers="using:Notifications.Helpers"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    xmlns:controls="using:Notifications.Controls">
+    
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock
+            Text="{Binding ScenarioGroup.Name, FallbackValue=[groupTitle]}"
+            Style="{StaticResource TitleTextBlockStyle}"
+            Margin="24"/>
+
+        <ListView
+            x:Name="listView"
+            ItemsSource="{Binding ScenarioGroup.Children}"
+            Grid.Row="1"
+            SelectionChanged="ListView_SelectionChanged">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <SymbolIcon
+                            Symbol="Placeholder"/>
+
+                        <TextBlock
+                            Text="{Binding Name}"
+                            Style="{StaticResource BodyTextBlockStyle}"
+                            Margin="12,6,0,6"
+                            Grid.Column="1"/>
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </Grid>
+    
+    
+    <!--<helpers:BackButtonPage.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal">
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="reset scenarios" Click="ButtonResetScenarios_Click"/>
+                <AppBarButton Label="generate report" Click="ButtonGenerateReport_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </helpers:BackButtonPage.BottomAppBar>-->
+    
+</helpers:BackButtonPage>
