@@ -79,6 +79,8 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -115,32 +117,8 @@
     <Compile Include="Model\Scenario.cs" />
     <Compile Include="Model\ScenarioGroup.cs" />
     <Compile Include="Model\Scenarios.cs" />
-    <Compile Include="$(SharedContentDir)\cs\AssemblyInfo.cs">
+    <Compile Include="C:\Users\Chris\Documents\GitHub\hookUI\SharedContent\cs\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\Action\TextAndImage\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\Action\QuickReply\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\Action\Text\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\InputText\DefaultInput\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\InputText\Title\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\InputText\PlaceholderContent\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\InputText\RetrievingArgs\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Actions\SystemCommands\SnoozeAndDismiss\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
     </Compile>
     <Compile Include="ScenarioPages\Toasts\ActivationTypes\BackgroundWithAppClosed\ScenarioElement.xaml.cs">
       <DependentUpon>ScenarioElement.xaml</DependentUpon>
@@ -173,27 +151,6 @@
       <DependentUpon>ScenarioElement.xaml</DependentUpon>
     </Compile>
     <Compile Include="ScenarioPages\Toasts\ActivationTypes\System\Snooze\Snoozing\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromAppData\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromAppPackage\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromInternet\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Audio\Default\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Audio\EmailSound\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Audio\Looping\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScenarioPages\Toasts\Audio\Silent\ScenarioElement.xaml.cs">
       <DependentUpon>ScenarioElement.xaml</DependentUpon>
     </Compile>
     <Compile Include="ScenarioPages\Toasts\ExpiringToast\ScenarioElement.xaml.cs">
@@ -238,9 +195,6 @@
     <Compile Include="ScenarioPage.xaml.cs">
       <DependentUpon>ScenarioPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ScenarioPages\Toasts\UpdateToast\ScenarioElement.xaml.cs">
-      <DependentUpon>ScenarioElement.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -249,92 +203,70 @@
   </ItemGroup>
   <ItemGroup>
     <!--Linked image assets-->
-    <Content Include="$(SharedContentDir)\media\microsoft-sdk.png">
-      <Link>Assets\microsoft-sdk.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\squaretile-sdk.png">
-      <Link>Assets\Small.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\squaretile-sdk.png">
-      <Link>Assets\Logo.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\smalltile-sdk.png">
-      <Link>Assets\SmallLogo.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Square310x310Logo.png">
-      <Link>Assets\LargeLogo.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\splash-sdk.png">
-      <Link>Assets\SplashScreen.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\storelogo-sdk.png">
-      <Link>Assets\StoreLogo.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\tile-sdk.png">
-      <Link>Assets\WideLogo.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\windows-sdk.png">
-      <Link>Assets\windows-sdk.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\squaretile-sdk.png">
-      <Link>Assets\DefaultSecondaryTileAssests\Small.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\squaretile-sdk.png">
-      <Link>Assets\DefaultSecondaryTileAssests\Medium.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\tile-sdk.png">
-      <Link>Assets\DefaultSecondaryTileAssests\Wide.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\squaretile-sdk.png">
-      <Link>Assets\DefaultSecondaryTileAssests\Large.png</Link>
-    </Content>
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-125.png" />
+    <Content Include="Assets\BadgeLogo.scale-150.png" />
+    <Content Include="Assets\BadgeLogo.scale-200.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\LargeLogo.scale-100.png" />
+    <Content Include="Assets\LargeLogo.scale-125.png" />
+    <Content Include="Assets\LargeLogo.scale-150.png" />
+    <Content Include="Assets\LargeLogo.scale-200.png" />
+    <Content Include="Assets\LargeLogo.scale-400.png" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\Logo.scale-125.png" />
+    <Content Include="Assets\Logo.scale-150.png" />
+    <Content Include="Assets\Logo.scale-200.png" />
+    <Content Include="Assets\Logo.scale-400.png" />
+    <Content Include="Assets\SmallLogo.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Assets\SmallLogo.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Assets\SmallLogo.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Assets\SmallLogo.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Assets\SmallLogo.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Assets\SmallLogo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\SmallLogo.altform-unplated_targetsize-24.png" />
+    <Content Include="Assets\SmallLogo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\SmallLogo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\SmallLogo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-125.png" />
+    <Content Include="Assets\SmallLogo.scale-150.png" />
+    <Content Include="Assets\SmallLogo.scale-200.png" />
+    <Content Include="Assets\SmallLogo.scale-400.png" />
+    <Content Include="Assets\SmallLogo.targetsize-16.png" />
+    <Content Include="Assets\SmallLogo.targetsize-24.png" />
+    <Content Include="Assets\SmallLogo.targetsize-256.png" />
+    <Content Include="Assets\SmallLogo.targetsize-32.png" />
+    <Content Include="Assets\SmallLogo.targetsize-48.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="Assets\WideLogo.scale-125.png" />
+    <Content Include="Assets\WideLogo.scale-150.png" />
+    <Content Include="Assets\WideLogo.scale-200.png" />
+    <Content Include="Assets\WideLogo.scale-400.png" />
+    <Content Include="Assets\hookUILogo.png" />
     <Content Include="Assets\cancel.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\check.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="$(SharedContentDir)\media\microsoft-sdk.png">
-      <Link>Assets\microsoft-sdk.png</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage1.jpg">
-      <Link>Assets\Photos\1.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage2.jpg">
-      <Link>Assets\Photos\2.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage3.jpg">
-      <Link>Assets\Photos\3.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage4.jpg">
-      <Link>Assets\Photos\4.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage5.jpg">
-      <Link>Assets\Photos\5.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage6.jpg">
-      <Link>Assets\Photos\6.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage7.jpg">
-      <Link>Assets\Photos\7.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage8.jpg">
-      <Link>Assets\Photos\8.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage9.jpg">
-      <Link>Assets\Photos\9.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage10.jpg">
-      <Link>Assets\Photos\10.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\cs\Default.rd.xml">
+    <Content Include="C:\Users\Chris\Documents\GitHub\hookUI\SharedContent\cs\Default.rd.xml">
       <Link>Properties\Default.rd.xml</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage1.jpg">
-      <Link>ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromAppData\Image.jpg</Link>
-    </Content>
-    <Content Include="$(SharedContentDir)\media\Samples\LandscapeImage2.jpg">
-      <Link>ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromAppPackage\Image.jpg</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -347,38 +279,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\Action\TextAndImage\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\Action\QuickReply\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\Action\Text\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\InputText\DefaultInput\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\InputText\Title\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\InputText\PlaceholderContent\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\InputText\RetrievingArgs\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Actions\SystemCommands\SnoozeAndDismiss\ScenarioElement.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -423,34 +323,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ScenarioPages\Toasts\ActivationTypes\System\Snooze\Snoozing\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromAppData\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromAppPackage\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\AdaptiveTemplates\Image\Src\FromInternet\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Audio\Default\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Audio\EmailSound\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Audio\Looping\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\Audio\Silent\ScenarioElement.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -509,10 +381,6 @@
     <Page Include="ScenarioPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ScenarioPages\Toasts\UpdateToast\ScenarioElement.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SplashScreenSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</SplashScreenSource>
+    <AppIconSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</AppIconSource>
+    <Source>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</Source>
+    <SmallTileSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</MediumTileSource>
+    <WideTileSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</WideTileSource>
+    <LargeTileSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</LargeTileSource>
+    <BadgeLogoSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Assets\hookUILogo.png</PackageLogoSource>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugEngines>
+    </DebugEngines>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+</Project>

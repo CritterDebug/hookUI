@@ -4,9 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace Notifications.Helpers
 {
-    /// <summary>
-    /// From http://danrigby.com/2012/04/01/inotifypropertychanged-the-net-4-5-way-revisited/
-    /// </summary>
+
     public abstract class BindableBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;

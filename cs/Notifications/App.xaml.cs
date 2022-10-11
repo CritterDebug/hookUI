@@ -15,13 +15,9 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=402347&clcid=0x409
 
 namespace Notifications
 {
-    /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
-    /// </summary>
     sealed partial class App : Application
     {
         public EventHandler<IActivatedEventArgs> Activated;
@@ -156,20 +152,26 @@ namespace Notifications
         {
 
             UserNotificationListener listener = UserNotificationListener.Current;
-            UserNotificationListenerAccessStatus accessStatus = await listener.RequestAccessAsync();
             
-            switch (accessStatus)
+            if (listener.GetAccessStatus() == UserNotificationListenerAccessStatus.Unspecified)
             {
-                case UserNotificationListenerAccessStatus.Allowed:
-                    System.Diagnostics.Debug.WriteLine("Listener access is allowed");
-                    break;
-                case UserNotificationListenerAccessStatus.Denied:
-                    System.Diagnostics.Debug.WriteLine("Listener access is denied");
-                    break;
-                case UserNotificationListenerAccessStatus.Unspecified:
-                    System.Diagnostics.Debug.WriteLine("Listener access is unspecified");
-                    break;
+                UserNotificationListenerAccessStatus accessStatus = await listener.RequestAccessAsync();
+
+                switch (accessStatus)
+                {
+                    case UserNotificationListenerAccessStatus.Allowed:
+                        System.Diagnostics.Debug.WriteLine("Yayy listener access is allowed");
+                        break;
+                    case UserNotificationListenerAccessStatus.Denied:
+                        System.Diagnostics.Debug.WriteLine("Oops listener access is denied");
+                        break;
+                    case UserNotificationListenerAccessStatus.Unspecified:
+                        System.Diagnostics.Debug.WriteLine("Oops listener access is unspecified");
+                        break;
+                }
             }
+
+            System.Diagnostics.Debug.WriteLine(listener.GetAccessStatus());
 
         }
 
@@ -177,15 +179,12 @@ namespace Notifications
         {
             var deferral = args.TaskInstance.GetDeferral();
 
-           
             switch (args.TaskInstance.Task.Name)
             {
                 case "UserNotificationChanged":
 
-                    System.Diagnostics.Debug.WriteLine("background activated");
-                    // Call your own method to process the new/removed notifications
-                    // The next section of documentation discusses this code
-                    //await MyWearableHelpers.SyncNotifications();
+                    System.Diagnostics.Debug.WriteLine("Background listener is activated");
+   
                     UserNotificationListener listener = UserNotificationListener.Current;
 
                     if (listener.GetAccessStatus() == UserNotificationListenerAccessStatus.Denied)
@@ -196,7 +195,12 @@ namespace Notifications
 
                     IReadOnlyList<UserNotification> notifs = await listener.GetNotificationsAsync(NotificationKinds.Toast);
 
-                    UserNotification notif = notifs[notifs.Count-1];
+                    if (notifs.Count == 0)
+                    {
+                        return;    
+                    }
+
+                    UserNotification notif = notifs[notifs.Count - 1];
 
                     // Get the app's display name
                     string appDisplayName = notif.AppInfo.DisplayInfo.DisplayName;
@@ -204,12 +208,11 @@ namespace Notifications
                     // Get the app's logo
                     BitmapImage appLogo = new BitmapImage();
                     RandomAccessStreamReference appLogoStream = notif.AppInfo.DisplayInfo.GetLogo(new Size(16, 16));
-                    //await appLogo.SetSourceAsync(await appLogoStream.OpenReadAsync());
+                    await appLogo.SetSourceAsync(await appLogoStream.OpenReadAsync());
 
                     System.Diagnostics.Debug.WriteLine("Display Name: " + appDisplayName);
                     System.Diagnostics.Debug.WriteLine("Description : " + notif.AppInfo.DisplayInfo.Description);
                     System.Diagnostics.Debug.WriteLine("Package Name: " + notif.AppInfo.PackageFamilyName);
-                    
 
                     NotificationBinding toastBinding = notif.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
 
@@ -230,8 +233,6 @@ namespace Notifications
                         System.Diagnostics.Debug.WriteLine("Contents: " + bodyText);
 
                     }
-
-
 
                     break;
             }

@@ -2,46 +2,11 @@
 {
     public static class Scenarios
     {
-        public static ScenarioGroup MainGroup = new ScenarioGroup("notifications scenarios", new IScenario[]
+        public static ScenarioGroup MainGroup = new ScenarioGroup("Main Page", new IScenario[]
         {
 
-            new ScenarioGroup("toasts", new IScenario[]
+            new ScenarioGroup("Go to toast selection ", new IScenario[]
             {
-                new ScenarioGroup("adaptive templates", new IScenario[]
-                {
-                    new ScenarioGroup("image", new IScenario[]
-                    {
-                        new ScenarioGroup("src", new IScenario[]
-                        {
-                            new Scenario("from app package", typeof(ScenarioPages.Toasts.AdaptiveTemplates.Image.Src.FromAppPackage.ScenarioElement)),
-                            new Scenario("from app data", typeof(ScenarioPages.Toasts.AdaptiveTemplates.Image.Src.FromAppData.ScenarioElement)),
-                            new Scenario("from internet", typeof(ScenarioPages.Toasts.AdaptiveTemplates.Image.Src.FromInternet.ScenarioElement))
-                        })
-                    })
-                }),
-
-                new ScenarioGroup("actions", new IScenario[]
-                {
-                    new ScenarioGroup("action (button)", new IScenario[]
-                    {
-                        new Scenario("text button", typeof(ScenarioPages.Toasts.Actions.Action.Text.ScenarioElement)),
-                        new Scenario("text and image button", typeof(ScenarioPages.Toasts.Actions.Action.TextAndImage.ScenarioElement)),
-                        new Scenario("quick reply button", typeof(ScenarioPages.Toasts.Actions.Action.QuickReply.ScenarioElement))
-                    }),
-
-                    new ScenarioGroup("input text", new IScenario[]
-                    {
-                        new Scenario("input text - title", typeof(ScenarioPages.Toasts.Actions.InputText.Title.ScenarioElement)),
-                        new Scenario("input text - placeholder content", typeof(ScenarioPages.Toasts.Actions.InputText.PlaceholderContent.ScenarioElement)),
-                        new Scenario("input text - default input", typeof(ScenarioPages.Toasts.Actions.InputText.DefaultInput.ScenarioElement)),
-                        new Scenario("input text - retrieving args", typeof(ScenarioPages.Toasts.Actions.InputText.RetrievingArgs.ScenarioElement))
-                    }),
-
-                    new ScenarioGroup("hint-systemCommands", new IScenario[]
-                    {
-                        new Scenario("SnoozeAndDismiss", typeof(ScenarioPages.Toasts.Actions.SystemCommands.SnoozeAndDismiss.ScenarioElement))
-                    })
-                }),
 
                 new ScenarioGroup("activation types", new IScenario[]
                 {
@@ -79,14 +44,6 @@
                     new Scenario("scenario: incomingCall", typeof(ScenarioPages.Toasts.Scenarios.IncomingCall.ScenarioElement))
                 }),
 
-                new ScenarioGroup("audio", new IScenario[]
-                {
-                    new Scenario("default", typeof(ScenarioPages.Toasts.Audio.Default.ScenarioElement)),
-                    new Scenario("system sound - email", typeof(ScenarioPages.Toasts.Audio.EmailSound.ScenarioElement)),
-                    new Scenario("looping", typeof(ScenarioPages.Toasts.Audio.Looping.ScenarioElement)),
-                    new Scenario("silent", typeof(ScenarioPages.Toasts.Audio.Silent.ScenarioElement))
-                }),
-
                 new ScenarioGroup("ToastNotificationManager.History", new IScenario[]
                 {
                     new ScenarioGroup("Remove(...)", new IScenario[]
@@ -113,7 +70,6 @@
                     new Scenario("Update badge on toast dismissal", typeof(ScenarioPages.Toasts.HistoryChangedTrigger.BadgeControl.ScenarioElement))
                 }),
 
-                new Scenario("update toast", typeof(ScenarioPages.Toasts.UpdateToast.ScenarioElement)),
             })
         });
     }

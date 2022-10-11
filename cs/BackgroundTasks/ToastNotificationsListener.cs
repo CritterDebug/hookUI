@@ -17,7 +17,7 @@ namespace BackgroundTasks
     {
         public void Run(IBackgroundTaskInstance taskInstance)
         {
-            System.Diagnostics.Debug.WriteLine("Notifications are allowed");
+            System.Diagnostics.Debug.WriteLine("Background task is being run");
 
         }
 
