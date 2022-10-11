@@ -9,27 +9,31 @@
     xmlns:helpers="using:Notifications.Helpers"
     DataContext="{Binding RelativeSource={RelativeSource Self}}"
     xmlns:controls="using:Notifications.Controls">
-    
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="323*"/>
+        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
+
         <TextBlock
             Text="{Binding ScenarioGroup.Name, FallbackValue=[groupTitle]}"
             Style="{StaticResource TitleTextBlockStyle}"
-            Margin="24"/>
+            Margin="24,24,24,24" Grid.ColumnSpan="2"/>
 
         <ListView
             x:Name="listView"
             ItemsSource="{Binding ScenarioGroup.Children}"
             Grid.Row="1"
-            SelectionChanged="ListView_SelectionChanged">
+            SelectionChanged="ListView_SelectionChanged" Grid.ColumnSpan="2">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -55,15 +59,5 @@
         </ListView>
 
     </Grid>
-    
-    
-    <!--<helpers:BackButtonPage.BottomAppBar>
-        <CommandBar ClosedDisplayMode="Minimal">
-            <CommandBar.SecondaryCommands>
-                <AppBarButton Label="reset scenarios" Click="ButtonResetScenarios_Click"/>
-                <AppBarButton Label="generate report" Click="ButtonGenerateReport_Click"/>
-            </CommandBar.SecondaryCommands>
-        </CommandBar>
-    </helpers:BackButtonPage.BottomAppBar>-->
-    
+
 </helpers:BackButtonPage>

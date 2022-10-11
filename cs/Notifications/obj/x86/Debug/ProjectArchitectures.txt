@@ -1,2 +1,2 @@
-C:\Users\chris\Documents\HookUI\cs\BackgroundTasks\BackgroundTasks.csproj;neutral
-C:\Users\chris\Documents\HookUI\cs\Notifications\Notifications.csproj;x86
+C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\BackgroundTasks.csproj;x86
+C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Notifications.csproj;x86

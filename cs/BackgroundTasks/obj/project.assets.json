@@ -18621,18 +18621,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {},
+    "C:\\Users\\Chris\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\Documents\\HookUI\\cs\\BackgroundTasks\\BackgroundTasks.csproj",
+      "projectUniqueName": "C:\\Users\\Chris\\Documents\\GitHub\\hookUI\\cs\\BackgroundTasks\\BackgroundTasks.csproj",
       "projectName": "BackgroundTasks",
-      "projectPath": "C:\\Users\\chris\\Documents\\HookUI\\cs\\BackgroundTasks\\BackgroundTasks.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\Documents\\HookUI\\cs\\BackgroundTasks\\obj\\",
+      "projectPath": "C:\\Users\\Chris\\Documents\\GitHub\\hookUI\\cs\\BackgroundTasks\\BackgroundTasks.csproj",
+      "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chris\\Documents\\GitHub\\hookUI\\cs\\BackgroundTasks\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -18640,7 +18640,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
