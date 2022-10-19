@@ -153,8 +153,8 @@ namespace Notifications
 
             UserNotificationListener listener = UserNotificationListener.Current;
             
-            if (listener.GetAccessStatus() == UserNotificationListenerAccessStatus.Unspecified)
-            {
+            // if (listener.GetAccessStatus() == UserNotificationListenerAccessStatus.Unspecified)
+            // {
                 UserNotificationListenerAccessStatus accessStatus = await listener.RequestAccessAsync();
 
                 switch (accessStatus)
@@ -169,7 +169,7 @@ namespace Notifications
                         System.Diagnostics.Debug.WriteLine("Oops listener access is unspecified");
                         break;
                 }
-            }
+            //}
 
             System.Diagnostics.Debug.WriteLine(listener.GetAccessStatus());
 
@@ -178,6 +178,8 @@ namespace Notifications
         protected override async void OnBackgroundActivated(BackgroundActivatedEventArgs args)
         {
             var deferral = args.TaskInstance.GetDeferral();
+
+            System.Diagnostics.Debug.WriteLine("yoooo");
 
             switch (args.TaskInstance.Task.Name)
             {
@@ -195,42 +197,68 @@ namespace Notifications
 
                     IReadOnlyList<UserNotification> notifs = await listener.GetNotificationsAsync(NotificationKinds.Toast);
 
-                    if (notifs.Count == 0)
-                    {
-                        return;    
-                    }
+                    //if (notifs.Count == 0)
+                    //{
+                    //    System.Diagnostics.Debug.WriteLine("Caught as size was 0");
+                    //    return;
+                    //}
 
                     UserNotification notif = notifs[notifs.Count - 1];
+                    // UserNotification notif = notifs[0];
 
                     // Get the app's display name
-                    string appDisplayName = notif.AppInfo.DisplayInfo.DisplayName;
-
+                    string appName = notif.AppInfo.DisplayInfo.DisplayName;
+                    string appDescription = "";
+                    string packageName = "";
+           
                     // Get the app's logo
                     BitmapImage appLogo = new BitmapImage();
-                    RandomAccessStreamReference appLogoStream = notif.AppInfo.DisplayInfo.GetLogo(new Size(16, 16));
-                    await appLogo.SetSourceAsync(await appLogoStream.OpenReadAsync());
 
-                    System.Diagnostics.Debug.WriteLine("Display Name: " + appDisplayName);
-                    System.Diagnostics.Debug.WriteLine("Description : " + notif.AppInfo.DisplayInfo.Description);
-                    System.Diagnostics.Debug.WriteLine("Package Name: " + notif.AppInfo.PackageFamilyName);
+                    try
+                    {
+                        RandomAccessStreamReference appLogoStream = notif.AppInfo.DisplayInfo.GetLogo(new Size(10, 10));
+                        
+                        if (appLogoStream != null)
+                        {
+                            System.Diagnostics.Debug.WriteLine("There is an image somewhere");
+                            await appLogo.SetSourceAsync(await appLogoStream.OpenReadAsync());
+                        } else
+                        {
+                            System.Diagnostics.Debug.WriteLine("It was null");
+                        }
+                    }
+                    catch (NullReferenceException nre)
+                    {
+                        System.Diagnostics.Debug.WriteLine(nre);
+                    }
 
                     NotificationBinding toastBinding = notif.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
 
-                    if (toastBinding != null)
+                    if (appName.Equals("Discord"))
                     {
-                        // And then get the text elements from the toast binding
-                        IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
+                        appDescription = notif.AppInfo.DisplayInfo.Description;
+                        packageName = notif.AppInfo.PackageFamilyName;
+                        string sender = "";
+                        string msgContent = "";
 
-                        // Treat the first text element as the title text
-                        string titleText = textElements.FirstOrDefault()?.Text;
+                        if (toastBinding != null)
+                        {
+                            // And then get the text elements from the toast binding
+                            IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
 
-                        System.Diagnostics.Debug.WriteLine("title: " + titleText);
+                            // Treat the first text element as the title text
+                            sender = textElements.FirstOrDefault()?.Text;
 
-                        // We'll treat all subsequent text elements as body text,
-                        // joining them together via newlines.
-                        string bodyText = string.Join("\n", textElements.Skip(1).Select(t => t.Text));
+                            // We'll treat all subsequent text elements as body text, joining them together via newlines.
+                            msgContent = string.Join("\n", textElements.Skip(1).Select(t => t.Text));
 
-                        System.Diagnostics.Debug.WriteLine("Contents: " + bodyText);
+                        }
+
+                        System.Diagnostics.Debug.WriteLine("App Name: " + appName);
+                        System.Diagnostics.Debug.WriteLine("App Description: " + appDescription);
+                        System.Diagnostics.Debug.WriteLine("Package Name: " + packageName);
+                        System.Diagnostics.Debug.WriteLine("Sender: " + sender);
+                        System.Diagnostics.Debug.WriteLine("Content: " + msgContent);
 
                     }
 

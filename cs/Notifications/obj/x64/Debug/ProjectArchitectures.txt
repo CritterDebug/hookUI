@@ -1,0 +1,2 @@
+C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\BackgroundTasks.csproj;x64
+C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\Notifications.csproj;x64

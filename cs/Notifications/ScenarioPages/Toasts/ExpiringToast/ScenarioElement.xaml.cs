@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Background;
@@ -61,7 +61,7 @@ namespace Notifications.ScenarioPages.Toasts.ExpiringToast
             // Set the text on the toast. 
             // The first line of text in the ToastText02 template is treated as header text, and will be bold.
             toastTextElements[0].AppendChild(toastXml.CreateTextNode("Expiring Toast"));
-            toastTextElements[1].AppendChild(toastXml.CreateTextNode("It will expire at " +  expiryTimeString));
+            toastTextElements[1].AppendChild(toastXml.CreateTextNode("It will expire at " + expiryTimeString));
 
             // Set the duration on the toast
             IXmlNode toastNode = toastXml.SelectSingleNode("/toast");

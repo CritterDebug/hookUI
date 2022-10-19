@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     xmlns:controls="using:Notifications.Controls"
                                >
-    
+
     <controls:StepsControl>
         <StackPanel Margin="24">
             <TextBlock TextWrapping="Wrap" Text="A toast should have appeared. Now go to Action Center in lower right hand corner and wait for it to disappear by itself. It should take 30 seconds."/>
