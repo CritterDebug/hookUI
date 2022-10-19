@@ -63,32 +63,32 @@
     </Application>
   </Applications>
   <Capabilities>
-    <Capability Name="internetClient" />
     <uap3:Capability Name="userNotificationListener" />
+    <Capability Name="internetClient" />
   </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>CLRHost.dll</Path>
-        <ActivatableClass ActivatableClassId="BackgroundTasks.BadgeNotificationHistoryChangedTriggerTask" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="BackgroundTasks.BadgeNumericNotificationContent" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="BackgroundTasks.Helpers.BackgroundTaskStorage" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="BackgroundTasks.Helpers.Settings" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="BackgroundTasks.Helpers.ToastHelper" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="BackgroundTasks.ToastNotificationHistoryChangedTriggerTask" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="BackgroundTasks.ToastActivationTypeBackgroundClosedTask" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="BackgroundTasks.ToastNotificationQuickReplyTask" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="BackgroundTasks.ToastNotificationsListener" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.Helpers.BackgroundTaskStorage" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.Helpers.ToastHelper" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.Helpers.Settings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.BadgeNotificationHistoryChangedTriggerTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.ToastNotificationQuickReplyTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.ToastActivationTypeBackgroundClosedTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.ToastNotificationHistoryChangedTriggerTask" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.UI.Xaml.Markup.ReflectionXamlMetadataProvider" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
-    <build:Item Name="VisualStudio" Version="17.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2022" />
+    <build:Item Name="VisualStudio" Version="16.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
     <build:Item Name="OperatingSystem" Version="10.0.19041.1 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.3.32728.75" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.32425.466" />
     <build:Item Name="ProjectGUID" Value="{3081AF80-B4C8-5982-9153-4AC6D3A339FD}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\cs",
+    "\\cs\\BackgroundTasks",
+    "\\cs\\Notifications",
+    "\\SharedContent"
   ],
-  "SelectedNode": "\\Notifications.sln",
   "PreviewInSolutionExplorer": false
 }

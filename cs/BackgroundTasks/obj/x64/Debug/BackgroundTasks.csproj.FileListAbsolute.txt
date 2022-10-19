@@ -2,7 +2,6 @@ C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\bin\x64\Debug\Backgrou
 C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\bin\x64\Debug\BackgroundTasks.pdb
 C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\bin\x64\Debug\BackgroundTasks.pri
 C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\obj\x64\Debug\BackgroundTasks.csproj.AssemblyReference.cache
 C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\obj\x64\Debug\BackgroundTasks.csproj.CoreCompileInputs.cache
 C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\obj\x64\Debug\BackgroundTasks.winmd
 C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\obj\x64\Debug\BackgroundTasks.pdb
