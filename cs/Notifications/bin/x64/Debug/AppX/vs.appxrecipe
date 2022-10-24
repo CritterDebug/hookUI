@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>0F65BD7C0F6F08AF785EA3A4EC2C13ADCA81E11B078B2FF6DD29B083AE8716F4</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>EF1B332C81E87C13477C70B602E2DD31C3BE2C6C567A9780002B68A79B71A267</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3ddf154d-c20e-4bb3-a630-3be0ff68e654_1.0.0.0_x64__88tf7eadxdb5m</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3ddf154d-c20e-4bb3-a630-3be0ff68e654_88tf7eadxdb5m!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3ddf154d-c20e-4bb3-a630-3be0ff68e654</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-18T13:18:37.593</Modified>
+      <Modified>2022-10-24T10:15:07.905</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\Notifications.exe">
       <PackagePath>entrypoint\Notifications.exe</PackagePath>
-      <Modified>2022-10-18T13:18:35.049</Modified>
+      <Modified>2022-10-24T10:15:04.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\.nuget\packages\microsoft.csharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -452,7 +452,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\BackgroundTasks\bin\x64\Debug\BackgroundTasks.winmd">
       <PackagePath>BackgroundTasks.winmd</PackagePath>
-      <Modified>2022-10-18T13:18:29.331</Modified>
+      <Modified>2022-10-24T10:08:47.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -755,119 +755,119 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.879</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\Controls\PopToastControl.xbf">
       <PackagePath>Controls\PopToastControl.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.879</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.880</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\BackgroundWithAppClosed\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\BackgroundWithAppClosed\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.880</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\BackgroundWithAppOpen\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\BackgroundWithAppOpen\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.880</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\ForegroundWithAppClosed\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\ForegroundWithAppClosed\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.880</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\ForegroundWithAppOpen\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\ForegroundWithAppOpen\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.880</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\Protocol\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\Protocol\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.880</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\System\Dismiss\AutoContent\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\System\Dismiss\AutoContent\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\System\Dismiss\CustomContent\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\System\Dismiss\CustomContent\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\System\Dismiss\Dismissing\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\System\Dismiss\Dismissing\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\System\Snooze\AutoContent\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\System\Snooze\AutoContent\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\System\Snooze\CustomContent\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\System\Snooze\CustomContent\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ActivationTypes\System\Snooze\Snoozing\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ActivationTypes\System\Snooze\Snoozing\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ExpiringToast\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ExpiringToast\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\GhostToast\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\GhostToast\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\HistoryChangedTrigger\BadgeControl\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\HistoryChangedTrigger\BadgeControl\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\HistoryChangedTrigger\RespondingToToasts\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\HistoryChangedTrigger\RespondingToToasts\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.869</Modified>
+      <Modified>2022-10-24T10:14:07.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\Scenarios\Alarm\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\Scenarios\Alarm\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.881</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\Scenarios\Default\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\Scenarios\Default\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.883</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\Scenarios\IncomingCall\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\Scenarios\IncomingCall\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.883</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\Scenarios\Reminder\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\Scenarios\Reminder\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.883</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ToastNotificationManagerHistory\ClearAll\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ToastNotificationManagerHistory\ClearAll\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.883</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ToastNotificationManagerHistory\GetHistory\Visualizer\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ToastNotificationManagerHistory\GetHistory\Visualizer\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.883</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ToastNotificationManagerHistory\RemoveGroup\ByGroup\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ToastNotificationManagerHistory\RemoveGroup\ByGroup\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.883</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ToastNotificationManagerHistory\Remove\ByTagAndGroup\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ToastNotificationManagerHistory\Remove\ByTagAndGroup\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.884</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPages\Toasts\ToastNotificationManagerHistory\Remove\ByTag\ScenarioElement.xbf">
       <PackagePath>ScenarioPages\Toasts\ToastNotificationManagerHistory\Remove\ByTag\ScenarioElement.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.884</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\ScenarioPage.xbf">
       <PackagePath>ScenarioPage.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.884</Modified>
+      <Modified>2022-10-24T10:14:07.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2022-10-18T13:18:34.879</Modified>
+      <Modified>2022-10-24T10:14:07.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -875,11 +875,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-10-18T13:18:37.045</Modified>
+      <Modified>2022-10-24T10:03:23.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\bin\x64\Debug\Core\Notifications.exe">
       <PackagePath>Notifications.exe</PackagePath>
-      <Modified>2022-10-18T13:18:37.591</Modified>
+      <Modified>2022-10-24T10:15:07.898</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

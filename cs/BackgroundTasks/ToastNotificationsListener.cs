@@ -17,7 +17,7 @@ namespace BackgroundTasks
     {
         public void Run(IBackgroundTaskInstance taskInstance)
         {
-            System.Diagnostics.Debug.WriteLine("Background task is being run");
+            System.Diagnostics.Debug.WriteLine("ToastNotificationsListener task is being run");
 
         }
 

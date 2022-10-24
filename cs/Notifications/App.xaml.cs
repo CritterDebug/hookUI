@@ -148,44 +148,39 @@ namespace Notifications
             await new MessageDialog(e.Exception.ToString(), "Unknown Error").ShowAsync();
         }
 
+        // Requesting notification permission at launch off application
         private async void requestNotificationPermission()
         {
 
             UserNotificationListener listener = UserNotificationListener.Current;
             
-            // if (listener.GetAccessStatus() == UserNotificationListenerAccessStatus.Unspecified)
-            // {
-                UserNotificationListenerAccessStatus accessStatus = await listener.RequestAccessAsync();
+            UserNotificationListenerAccessStatus accessStatus = await listener.RequestAccessAsync();
 
-                switch (accessStatus)
-                {
-                    case UserNotificationListenerAccessStatus.Allowed:
-                        System.Diagnostics.Debug.WriteLine("Yayy listener access is allowed");
-                        break;
-                    case UserNotificationListenerAccessStatus.Denied:
-                        System.Diagnostics.Debug.WriteLine("Oops listener access is denied");
-                        break;
-                    case UserNotificationListenerAccessStatus.Unspecified:
-                        System.Diagnostics.Debug.WriteLine("Oops listener access is unspecified");
-                        break;
-                }
-            //}
-
-            System.Diagnostics.Debug.WriteLine(listener.GetAccessStatus());
+            switch (accessStatus)
+            {
+                case UserNotificationListenerAccessStatus.Allowed:
+                    System.Diagnostics.Debug.WriteLine("Yayy listener access is allowed");
+                    break;
+                case UserNotificationListenerAccessStatus.Denied:
+                    System.Diagnostics.Debug.WriteLine("Oops listener access is denied");
+                    break;
+                case UserNotificationListenerAccessStatus.Unspecified:
+                    System.Diagnostics.Debug.WriteLine("Oops listener access is unspecified");
+                    break;
+            }
 
         }
 
+        // this is called when the bacground task is activted. The links to the background tasks can be found in the Package.appxmanifest under declarations
         protected override async void OnBackgroundActivated(BackgroundActivatedEventArgs args)
         {
             var deferral = args.TaskInstance.GetDeferral();
-
-            System.Diagnostics.Debug.WriteLine("yoooo");
 
             switch (args.TaskInstance.Task.Name)
             {
                 case "UserNotificationChanged":
 
-                    System.Diagnostics.Debug.WriteLine("Background listener is activated");
+                    System.Diagnostics.Debug.WriteLine("\nBackground listener has worked");
    
                     UserNotificationListener listener = UserNotificationListener.Current;
 
@@ -197,14 +192,13 @@ namespace Notifications
 
                     IReadOnlyList<UserNotification> notifs = await listener.GetNotificationsAsync(NotificationKinds.Toast);
 
-                    //if (notifs.Count == 0)
-                    //{
-                    //    System.Diagnostics.Debug.WriteLine("Caught as size was 0");
-                    //    return;
-                    //}
+                    // prevents calls being activated twice
+                    if (notifs.Count == 0)
+                    {
+                        return;
+                    }
 
                     UserNotification notif = notifs[notifs.Count - 1];
-                    // UserNotification notif = notifs[0];
 
                     // Get the app's display name
                     string appName = notif.AppInfo.DisplayInfo.DisplayName;
@@ -212,9 +206,10 @@ namespace Notifications
                     string packageName = "";
            
                     // Get the app's logo
-                    BitmapImage appLogo = new BitmapImage();
+                    // BitmapImage appLogo = new BitmapImage();
 
-                    try
+                    // We removed the need for requesting access to logos as this is only available with standard windows applications.
+                    /* try
                     {
                         RandomAccessStreamReference appLogoStream = notif.AppInfo.DisplayInfo.GetLogo(new Size(10, 10));
                         
@@ -230,38 +225,34 @@ namespace Notifications
                     catch (NullReferenceException nre)
                     {
                         System.Diagnostics.Debug.WriteLine(nre);
-                    }
+                    } */
 
                     NotificationBinding toastBinding = notif.Notification.Visual.GetBinding(KnownNotificationBindings.ToastGeneric);
 
-                    if (appName.Equals("Discord"))
+                    appDescription = notif.AppInfo.DisplayInfo.Description;
+                    packageName = notif.AppInfo.PackageFamilyName;
+                    string sender = "";
+                    string msgContent = "";
+
+                    if (toastBinding != null)
                     {
-                        appDescription = notif.AppInfo.DisplayInfo.Description;
-                        packageName = notif.AppInfo.PackageFamilyName;
-                        string sender = "";
-                        string msgContent = "";
+                        // And then get the text elements from the toast binding
+                        IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
 
-                        if (toastBinding != null)
-                        {
-                            // And then get the text elements from the toast binding
-                            IReadOnlyList<AdaptiveNotificationText> textElements = toastBinding.GetTextElements();
+                        // Treat the first text element as the title text
+                        sender = textElements.FirstOrDefault()?.Text;
 
-                            // Treat the first text element as the title text
-                            sender = textElements.FirstOrDefault()?.Text;
-
-                            // We'll treat all subsequent text elements as body text, joining them together via newlines.
-                            msgContent = string.Join("\n", textElements.Skip(1).Select(t => t.Text));
-
-                        }
-
-                        System.Diagnostics.Debug.WriteLine("App Name: " + appName);
-                        System.Diagnostics.Debug.WriteLine("App Description: " + appDescription);
-                        System.Diagnostics.Debug.WriteLine("Package Name: " + packageName);
-                        System.Diagnostics.Debug.WriteLine("Sender: " + sender);
-                        System.Diagnostics.Debug.WriteLine("Content: " + msgContent);
+                        // We'll treat all subsequent text elements as body text, joining them together via newlines.
+                        msgContent = string.Join("\n", textElements.Skip(1).Select(t => t.Text));
 
                     }
 
+                    System.Diagnostics.Debug.WriteLine("App Name: " + appName);
+                    System.Diagnostics.Debug.WriteLine("App Description: " + appDescription);
+                    System.Diagnostics.Debug.WriteLine("Package Name: " + packageName);
+                    System.Diagnostics.Debug.WriteLine("Sender: " + sender);
+                    System.Diagnostics.Debug.WriteLine("Content: " + msgContent);
+                    
                     break;
             }
 

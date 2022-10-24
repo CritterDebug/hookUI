@@ -338,3 +338,4 @@ C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\obj\x64\Debug\MultipleQu
 C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425067200000000.json
 C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\obj\x64\Debug\.winmd_cache\$BackgroundTasks.winmd_638016959093318645.json
+C:\Users\Chris\Documents\GitHub\hookUI\cs\Notifications\obj\x64\Debug\.winmd_cache\$BackgroundTasks.winmd_638022029276295061.json
